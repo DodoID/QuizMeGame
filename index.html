@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Coding Quiz</title>
+    <title>QuizMeGame</title>
 
     <link rel="stylesheet" href="./Assets/css/styles.css" />
   </head>
 
   <body>
-    <div class="scores"><a href="highscores.html">View Highscores</a></div>
+    <div class="scores"><a href="highscores.html">View High-Scores</a></div>
 
     <div id="timer" class="hide">
-      Time: <span id="time">0</span>
+      Time left: <span id="time">0</span>
     </div>
 
     <div class="wrapper">
@@ -22,7 +22,7 @@
         <p>
           WIll you be able to answer correctly to all of the questions, will you be the next milionare, keep in mind, the time is limited!
         </p>
-        <button id="start">Start Quiz</button>
+        <button id="start">Start My Game</button>
       </div>
 
       <div id="questions" class="hide">
@@ -35,10 +35,10 @@
       </div>
 
       <div id="end-screen" class="hide">
-        <h2>All done!</h2>
-        <p>Your final score is <span id="final-score"></span>.</p>
+        <h2>All done, you are great!</h2>
+        <p>Your final milionaire score is <span id="final-score"></span>.</p>
         <p>
-          Enter initials: <input type="text" id="initials" maxlength="3" />
+          Enter your initials: <input type="text" id="initials" maxlength="3" />
           <button id="submit">Submit</button>
         </p>
       </div>
