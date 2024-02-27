@@ -41,4 +41,10 @@ The whole tutoring team and edX Front end dev bootcamp that are so helpful and s
 
 ## Print Screen
 
-![QuizMeGame](Assets\images\Screenshot 2024-02-27 131230.png)
+![Printscreen 1](https://github.com/DodoID/QuizMeGame/blob/main/Assets/images/Screenshot%202024-02-27%20131230.png)
+
+![Printscreen 2](https://github.com/DodoID/QuizMeGame/blob/main/Assets/images/Screenshot%202024-02-27%20131230.png)
+
+![Printscreen 3](https://github.com/DodoID/QuizMeGame/blob/main/Assets/images/Screenshot%202024-02-27%20131230.png)
+
+![Printscreen 4](https://github.com/DodoID/QuizMeGame/blob/main/Assets/images/Screenshot%202024-02-27%20131230.png)
