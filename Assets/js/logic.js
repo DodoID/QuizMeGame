@@ -19,8 +19,8 @@
   const finalScore = document.getElementById('final-score');
 
   // Get audio elements
-  const audioCorrect = new Audio('./assets/sfx/correct.wav');
-  const audioIncorrect = new Audio('./assets/sfx/incorrect.wav');
+  const audioCorrect = new Audio('./Assets/sfx/correct.wav');
+  const audioIncorrect = new Audio('./Assets/sfx/incorrect.wav');
 
   // Add event listeners inside DOMContentLoaded event
   document.addEventListener('DOMContentLoaded', function () {
