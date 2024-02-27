@@ -1,10 +1,27 @@
 body {
-    font-family: Arial;
-    font-size: 120%;
-  }
+  font-family: 'Roboto', sans-serif; /* Example font import */
+  font-size: 16px; /* Base font size */
+  line-height: 1.5; /* Added line-height for readability */
+  color: #333; /* Darker text for better contrast */
+  background: #faa5b7;
+}
+
+.wrapper {
+  margin: 50px auto; /* Adjusted margin for more whitespace */
+  max-width: 700px; 
+  padding: 20px; /* Added padding for internal spacing */
+  box-shadow: 0 4px 7px rgba(0,0,0, 0.1); /* Subtle box shadow */
+  background-color: rgb(223, 107, 252);
+  border-radius: 10px;
+}
+
+h1, h2 {
+  font-family: 'Raleway', sans-serif; /* Example secondary font */
+  text-align: center;
+}
   
   a {
-    color: #563d7c;
+    color: #1d774d;
     text-decoration: none;
     transition: color 0.1s;
   }
@@ -110,3 +127,7 @@ body {
     margin-top: 2rem;
   }
   
+  @media (max-width: 768px) {
+    .wrapper { 
+      max-width: 95%; 
+    }

@@ -2,33 +2,31 @@
 const clear = document.getElementById('clear');
 const highscoresList = document.getElementById('highscores');
 
-// Add event listeners
-clear.addEventListener('click', clearScores)
+// Add event listener for clearing scores
+clear.addEventListener('click', clearScores);
 
 // Get scores from local storage
 let highscores = localStorage.getItem('scores');
-highscores = JSON.parse(highscores);
-highscores.sort((a, b) => {
-  if (a.time > b.time) {
-    return -1;
-  }
-  if (a.time < b.time) {
-    return 1;
-  }
-  if (highscores.indexOf(a) > highscores.indexOf(b)) {
-    return 1;
-  }
-  return -1;
-})
 
+// Parse scores from JSON
+highscores = JSON.parse(highscores);
+
+// Sort scores in descending order based on time
+highscores.sort((a, b) => b.time - a.time);
+
+// Display sorted scores
 highscores.forEach((highscore) => {
-  let score = document.createElement('li')
-  let denomination = (highscore.time == '1') ? 'second' : 'seconds';
+  let score = document.createElement('li');
+  let denomination = (highscore.time == 1) ? 'second' : 'seconds';
   score.innerHTML = `${highscore.initials} - ${highscore.time} ${denomination}`;
   highscoresList.appendChild(score);
-})
+});
 
+// Function to clear scores
 function clearScores() {
+  // Remove scores from local storage
   localStorage.removeItem('scores');
+  
+  // Clear the displayed scores
   highscoresList.innerHTML = '';
 }
